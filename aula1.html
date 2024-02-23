@@ -3,5 +3,56 @@
 <!-- W3SCHOOLS HTML, CSS E JAVASCRIPT -->
 <!-- 
   git init -> iniciar o repositorio (apenas 1x)
-  
+  git add -> adicionar os arquivos na arvore git
+  git status -> verificar o status do git
+  git commit -m "iniciar projeto e arquivo aula1.html"
+
+  git push -u origin master (verificar no vs) (1x)
+  git push -> enviar o repositorio local p repo remoto
+
+  git pull -> eviar do repo remoto p repo local
+
+  git clone <caminho do repo> -> somente qdo quiser copia do remoto
+
+  ### adicionar repositorio remoto (Github)
+  git remote add origin https://github.com/jrcampos82/webdinamico_2024.git (apenas 1x)
+  git remote -v (verificar repositorio remoto)
  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 1 - Javascript</title>
+  </head>
+  <body></body>
+  <script>
+    // x = 10
+    // var beto = 1995
+
+    const ifms = 5; // constantes (arrays ou objs)
+    let x = 20;
+    let y = 10;
+    let z = x + y;
+
+    let carName = "Corolla",
+      price = 200;
+
+    let carModel = "Toyota";
+
+    y += 10;
+
+    console.log(carModel + " " + carName);
+    console.log(carModel + " " + z);
+
+    // Objeto
+    const person = { firstName: "Beto", lastName: "Campos" };
+
+    // Vetor, Array ...
+    const car = ["fusca", "gol", "uno"];
+
+    console.log(car);
+
+    console.log(person);
+  </script>
+</html>
