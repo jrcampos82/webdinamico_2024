@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula funções</title>
+  </head>
+  <body></body>
+
+  <script>
+    function inArray(array, valor) {
+      for (item in array) {
+        array[item] += valor;
+      }
+      return array;
+    }
+
+    const r = inArray([1, 3, 4], 4);
+
+    console.log(r);
+
+    const f1 = new Function("b", "h", "return (b*h)/2");
+    f1(3, 4);
+
+    const areaTri = function(h, b){ return b*h/2}
+
+
+    // arrow function
+    const x = () => {}
+
+    const soma = (a, b) => { return a+b }
+
+    
+
+  </script>
+</html>
