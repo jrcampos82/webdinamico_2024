@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model (DOM)</title>
+    <style>
+      .bgRed {
+        background: red;
+      }
+      .bgBlue {
+        background: blue;
+      }
+
+      .bgGreen {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>Manipulação da DOM</h2>
+    <a id="ref1" href="http://www.w3.org/DOM">DOM</a> -->
+
+    <!-- <p>Lista não ordenada</p>
+    <ul>
+      <li>Primeiro item da lista</li>
+      <li>Segundo item da lista</li>
+      <li>Terceiro item da lista</li>
+    </ul> -->
+
+    <div>
+      <p class="bgBlue">Lorem ipsum dolor sit amet consectetur.</p>
+      <p class="bgBlue">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <p class="bgBlue">Lorem ipsum dolor sit amet.</p>
+    <p class="bgBlue">Lorem ipsum dolor sit amet consectetur.</p>
+  </body>
+
+  <script>
+    // let resp = document.getElementById("ref1");
+
+    // let d = document.body.children;
+
+    // console.log(d);
+
+    // console.log(resp);
+
+    // console.log(resp.nodeName);
+
+    // resp.innerHTML = "Novo texto!";
+
+    // console.log(resp.id);
+
+    // Pegar elemento pela tag
+
+    // let listItems = document.getElementsByTagName("li")
+
+    // document.write("<span>Texto dentro dos elementos li</span>")
+
+    // document.write("<p>Há " + listItems.length + " elementos</p>")
+
+    // listItems[0].innerHTML = "outro texto"
+
+    // document.getElementsByClassName
+
+    // console.log(listItems);
+
+    let bgRed = document.getElementsByClassName("bgRed");
+
+    let bgVermelho = document.querySelector("p");
+
+    let bgBlue = document.getElementsByClassName("bgBlue");
+
+    console.log(bgVermelho);
+
+    // console.log(bgBlue);
+
+    bgRed[0].classList.add("bgGreen");
+  </script>
+</html>
